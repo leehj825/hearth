@@ -3,3 +3,4 @@
 - [x] Player Movement & Resource Logic
 - [x] Automated APK Build Pipeline (GitHub Actions)
 - [ ] Task: Implement Mobile On-Screen Joystick
+- [x] Initialized Android Export Preset
