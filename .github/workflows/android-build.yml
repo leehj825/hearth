@@ -29,7 +29,7 @@ jobs:
         run: |
           cd src
           mkdir -p build/android
-          godot --headless --export-release "Android" build/android/game.apk
+          godot --headless --export-debug "Android" build/android/game.apk
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
