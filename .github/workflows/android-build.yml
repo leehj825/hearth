@@ -3,7 +3,7 @@ name: "Godot 4 Android Build"
 on:
   push:
     branches:
-      - main
+      - "*"  # This triggers the build on every branch
 
 jobs:
   export-android:
