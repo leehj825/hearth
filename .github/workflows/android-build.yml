@@ -17,8 +17,8 @@ jobs:
 
       - name: Setup Android Keystore
         run: |
-          mkdir -p ~/.android
-          keytool -keyalg RSA -genkeypair -alias androiddebugkey -keypass android -keystore ~/.android/debug.keystore -storepass android -dname "CN=Android Debug,O=Android,C=US" -validity 9999
+          mkdir -p /root/.android
+          keytool -keyalg RSA -genkeypair -alias androiddebugkey -keypass android -keystore /root/.android/debug.keystore -storepass android -dname "CN=Android Debug,O=Android,C=US" -validity 9999
 
       - name: Setup Export Templates
         run: |
