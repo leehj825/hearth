@@ -5,3 +5,4 @@
 - [ ] Task: Implement Mobile On-Screen Joystick
 - [x] Initialized Android Export Preset
 - [x] Fixed Android Export Configuration
+- [x] Future-proofed build pipeline for Node 24 and fixed export configurations
