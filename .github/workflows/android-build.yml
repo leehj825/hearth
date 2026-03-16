@@ -15,12 +15,12 @@ jobs:
       image: barichello/godot-ci:4.3
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup Android Keystore
         run: |
-          mkdir -p /root/.android
-          keytool -keyalg RSA -genkeypair -alias androiddebugkey -keypass android -keystore /root/.android/debug.keystore -storepass android -dname "CN=Android Debug,O=Android,C=US" -validity 9999
+          mkdir -p ~/.android
+          keytool -keyalg RSA -genkeypair -alias androiddebugkey -keypass android -keystore ~/.android/debug.keystore -storepass android -dname "CN=Android Debug,O=Android,C=US" -validity 9999
 
       - name: Setup Export Templates
         run: |
@@ -33,10 +33,10 @@ jobs:
         run: |
           cd src
           mkdir -p build/android
-          godot --headless --export-debug "Android" build/android/game.apk
+          godot --headless --editor --quit && godot --headless --export-release "Android" build/android/game.apk
 
       - name: Upload Artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: Android-APK
           path: src/build/android/game.apk
