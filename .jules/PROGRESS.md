@@ -6,3 +6,4 @@
 - [x] Initialized Android Export Preset
 - [x] Fixed Android Export Configuration
 - [x] Future-proofed build pipeline for Node 24 and fixed export configurations
+- [x] Fixed CI export configuration
