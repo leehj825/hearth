@@ -4,3 +4,9 @@
 - [x] Automated APK Build Pipeline (GitHub Actions)
 - [ ] Task: Implement Mobile On-Screen Joystick
 - [x] Initialized Android Export Preset
+- [x] Fixed Android Export Configuration
+- [x] Future-proofed build pipeline for Node 24 and fixed export configurations
+- [x] Fixed CI export configuration
+- [x] Added CI build export pack workaround
+- [x] Corrected Android Release Keystore configuration
+- [x] Android export configuration is being repaired for CI
