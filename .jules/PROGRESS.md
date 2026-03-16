@@ -9,3 +9,4 @@
 - [x] Fixed CI export configuration
 - [x] Added CI build export pack workaround
 - [x] Corrected Android Release Keystore configuration
+- [x] Android export configuration is being repaired for CI
